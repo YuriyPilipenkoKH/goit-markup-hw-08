@@ -192,10 +192,6 @@ img {
           justify-content: space-between;
 }
 
-.current {
-  color: var(--button);
-}
-
 /* Thin blue line */
 .menu__link {
   font-weight: 500;
@@ -218,6 +214,10 @@ img {
 
 .menu__list-item:not(:last-child) {
   margin-bottom: 35px;
+}
+
+.current {
+  color: var(--button);
 }
 
 .contacts__link {

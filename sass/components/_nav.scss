@@ -13,9 +13,7 @@
     justify-content: space-between;
   }
   
- .current {
-   color: var(--button);
- }
+
   
   /* Thin blue line */
   // .menu__list .current {
@@ -61,4 +59,6 @@
   .menu__list-item:not(:last-child) {
     margin-bottom: 35px;
   }
-
+  .current {
+    color: var(--button);
+  }
