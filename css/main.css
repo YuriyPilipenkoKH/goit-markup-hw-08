@@ -121,6 +121,11 @@ img {
   background-color: transparent;
   cursor: pointer;
 }
+@media screen and (max-width: 767px) {
+  .menu-button {
+    display: none;
+  }
+}
 
 .menu-button .icon-cross {
   display: none;
@@ -141,7 +146,7 @@ img {
   left: 0;
   width: 100%;
   z-index: 2;
-  background-color: #ffffff;
+  background-color: var(--main-background);
   padding: 48px 40px;
   font-size: 20px;
   height: 796px;
@@ -149,6 +154,11 @@ img {
 }
 .menu-container.is-open {
   display: block;
+}
+@media screen and (max-width: 767px) {
+  .menu-container {
+    display: none;
+  }
 }
 
 .menu-container__social-list {
@@ -901,6 +911,7 @@ img {
   opacity: 1;
   -webkit-transition: opacity 1600ms var(--cubic);
   transition: opacity 1600ms var(--cubic);
+  overflow-y: scroll;
 }
 
 .is-hidden {

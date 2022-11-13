@@ -18,7 +18,7 @@
           Web<span class="header-nav__logo-link--black">Studio
           </span></a>
 
-          <button class="menu-button" type="button" data-menu-button>
+          <button class="menu-button" type="button" aria-expanded="false" aria-controls="menu-container" data-menu-button>
             <svg class="menu-button__icon" width="40" height="40">
               <use class="icon-cross" href="./images/menu-sprite.svg#icon-close"></use>
               <use class="icon-menu" href="./images/menu-sprite.svg#icon-menu"></use>
@@ -26,7 +26,7 @@
 
           </button>
     <!--navigation-->
-    <div class="menu-container" data-menu>
+    <div class="menu-container" id="menu-container" data-menu>
       <nav class="menu">
           <ul class="menu__list list">
               <li class="menu__list-item">

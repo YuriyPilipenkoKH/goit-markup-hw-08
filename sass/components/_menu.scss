@@ -16,6 +16,11 @@
     border: none;
     background-color: transparent;
     cursor: pointer;
+
+    @media screen and (max-width: 767px) {
+        display: none;
+    }
+
 }
 .menu-button .icon-cross {
     display: none;
@@ -34,7 +39,7 @@
     left: 0;
     width: 100%;
     z-index: 2;
-     background-color: #ffffff;
+    background-color: var(--main-background);
     padding: 48px 40px;
     // text-align: center;
     font-size: 20px;
@@ -45,6 +50,9 @@
         display: block;
     }
 
+    @media screen and (max-width: 767px) {
+        display: none;
+    }
 }
 
 
