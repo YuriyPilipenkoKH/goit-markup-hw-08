@@ -107,6 +107,10 @@ img {
   z-index: 3;
 }
 
+.menu-button__icon:hover, .menu-button__icon:focus {
+  fill: var(--button);
+}
+
 .menu-button {
   display: -webkit-inline-box;
   display: -ms-inline-flexbox;
@@ -152,7 +156,7 @@ img {
   display: -webkit-inline-box;
   display: -ms-inline-flexbox;
   display: inline-flex;
-  gap: 20px;
+  gap: 10px;
 }
 
 .menu-container__social-item:not(:last-child) {
@@ -263,7 +267,7 @@ img {
   font-size: 34px;
   line-height: 1.1764705882;
   letter-spacing: 0.02em;
-  color: var(--contact);
+  color: var(--button);
   margin-bottom: 32px;
 }
 
