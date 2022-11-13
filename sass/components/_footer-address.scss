@@ -1,0 +1,55 @@
+/*footer*/
+.footer {
+    background: var(--footer);
+    padding: 60px 0 60px 0;
+  }
+  
+  .footer-address {
+    margin-top: 20px;
+  }
+  
+  
+  .footer-address__map {
+    font-style: normal;
+    font-size: 14px;
+    line-height: 1.71;
+    text-decoration: none;
+    letter-spacing: 0.03em;
+    color: var(--main-background);
+  }
+  
+  .footer-address__mail,
+  .footer-address__tel {
+    font-style: normal;
+    font-size: 14px;
+    line-height: 1.71;
+    text-decoration: none;
+    letter-spacing: 0.03em;
+    color: var(--mail);
+
+    transition-property: color;
+     transition-duration: 250ms;
+    transition-timing-function: var(--cubic);
+  }
+  
+
+  .footer-address__item {
+    &:not(:last-child) {
+      margin-bottom: 9px;
+    }
+  }
+
+  .footer-address__mail,
+  .footer-address__tel {
+    &:hover,
+    &:focus {
+      color: var(--button);
+    }
+  }
+
+  .footer__content {
+
+    display: flex;
+    align-items: baseline;
+    justify-content: space-between;
+  }

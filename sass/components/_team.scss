@@ -1,0 +1,111 @@
+/*team*/
+.group {
+    padding: 94px 0;
+    background-color: var(--team);
+  }
+  
+  .team {
+    display: flexbox;
+  }
+  
+  .team__title {
+    margin-bottom: 50px;
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 1.16;
+    text-align: center;
+    letter-spacing: 0.03em;
+    color: var(--main-color);
+  }
+  
+  .team__list {
+
+    display: flex;
+    gap: 30px;
+  }
+  
+  .team__list-item {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    background-color: var(--main-background);
+    border-radius: 0px 0px 4px 4px;
+    box-shadow: var(--box-shadow-first);
+  }
+  
+  .team-card {
+    padding: 30px 0;
+  }
+  
+  .team-card__name {
+    margin-bottom: 10px;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.18;
+    letter-spacing: 0.03em;
+    color: var(--main-color);
+  }
+  
+  .team-card__position {
+    margin-bottom: 16px;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 1.18;
+    letter-spacing: 0.03em;
+    color: var(--contact);
+  }
+  
+  .social-list {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+  }
+  
+  .social-list__item {
+
+    display: flex;
+  }
+  
+  .social-list__link {
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 44px;
+    height: 44px;
+    background: var(--main-background);
+    border-radius: 50%;
+
+    transition-property: background-color;
+    transition-duration: 250ms;
+    transition-timing-function: var(--cubic);
+  }
+  
+  .social-list__image {
+    width: 20px;
+    height: 20px;
+    fill: var(--color-third);
+    
+    transition-property: fill;
+    transition-duration: 250ms;
+    transition-timing-function: var(--cubic);
+  }
+  
+  .social-list__link {
+    &:hover,
+    &:focus {
+      background-color: var(--button);
+    }
+    &:hover {
+      .social-list__image {
+        fill: var(--main-background);
+      }
+    }
+    &:focus {
+      .social-list__image  {
+        fill: var(--main-background);
+      }
+    }
+  }
+  
