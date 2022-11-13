@@ -121,7 +121,7 @@ img {
   background-color: transparent;
   cursor: pointer;
 }
-@media screen and (max-width: 767px) {
+@media screen and (min-width: 767px) {
   .menu-button {
     display: none;
   }
@@ -155,7 +155,7 @@ img {
 .menu-container.is-open {
   display: block;
 }
-@media screen and (max-width: 767px) {
+@media screen and (min-width: 767px) {
   .menu-container {
     display: none;
   }

@@ -17,7 +17,7 @@
     background-color: transparent;
     cursor: pointer;
 
-    @media screen and (max-width: 767px) {
+    @media screen and (min-width: 767px) {
         display: none;
     }
 
@@ -50,7 +50,7 @@
         display: block;
     }
 
-    @media screen and (max-width: 767px) {
+    @media screen and (min-width: 767px) {
         display: none;
     }
 }
