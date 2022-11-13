@@ -58,4 +58,7 @@
     transition-timing-function: var(--cubic);
 
   }
+  .menu__list-item:not(:last-child) {
+    margin-bottom: 35px;
+  }
 

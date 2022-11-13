@@ -36,15 +36,28 @@
     transition-duration: 250ms;
     transition-timing-function: var(--cubic);
   }
+  .contacts__item--mail {
+    margin-bottom: 64px;
+  }
   .contacts__link--mail {
+    font-weight: 500;
+    font-size: 24px;
+    line-height: calc(28 /24);
+    letter-spacing: 0.02em;
+    color: var(--contact);
 
   }
+.contacts__item--tel {
+  margin-top: 300px;
+  margin-bottom: 32px;
+}
   .contacts__link--tel {
     font-weight: 500;
     font-size: 34px;
     line-height: calc(40 / 34);
     letter-spacing: 0.02em;
     color: var(--contact);
+    margin-bottom: 32px;
 
   }
 
