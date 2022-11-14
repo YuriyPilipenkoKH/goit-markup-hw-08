@@ -1,65 +1,100 @@
 
 /*clients*/
 .clients {
+  @media screen and (max-width: 1199px) {
+    padding: 60px 0;
+  }
+  @media screen and (min-width: 1200px) {
     padding: 94px 0;
+  }
   }
   
   .clients__title {
-    margin-bottom: 50px;
+    
     font-weight: 700;
-    font-size: 36px;
-    line-height: 42px;
     text-align: center;
     letter-spacing: 0.03em;
+    color: var(--main-color);
+
+    @media screen and (max-width: 1199px) {
+      font-size: 28px;
+      line-height: calc(33 / 28);
+      margin-bottom: 30px;
+
+    }
+    @media screen and (min-width: 1200px) {
+      font-size: 36px;
+      line-height: calc(42 / 36);
+      margin-bottom: 50px;
+    }
+
+
   }
+  .clients__link {
+    display: flex;
+    align-items: center;
+   justify-content: center;
+   border: 1px solid var(--color-third);
+   border-radius: 4px;
+   
+   @include transit(border-color);
+ }
+
+ .clients__link {
+   &:hover,
+   &:focus {
+     border-color: var(--button);
+   }
+   &:hover {
+   .clients__icon {
+     fill: var(--button)
+   }
+   } 
+   &:focus  {
+     .clients__icon {
+       fill: var(--button)
+     }
+   }
+ }
   
   .clients__list {
     display: flex;
-    align-items: center;
-    justify-content: center;
-    gap: 30px;
-  }
+
+    @media screen and (max-width: 1199px) {
+      flex-wrap: wrap;
+      gap: 30px;
+
+    }
+    @media screen and (min-width: 1200px) {
+      gap: 30px;
+    }
+   }
+
   
   .clients__item {
-    flex-basis: calc((100% - 5 * 30px)/ 6);
+  
+  @media screen and (max-width: 1199px) {
+    flex-basis: calc((100% - 60px) / 3);
+    min-width: 100px;
+
   }
+  @media screen and (max-width: 767px) {
+    flex-basis: calc((100% - 30px) / 2);
+  min-width: 100px;
+  }
+
+  @media screen and (min-width: 1200px) {
+    flex-basis: calc((100% - 150px) / 6);
+    min-width: 100px;
+  }
+
+   }
   
   .clients__icon {
-    min-width: 165px;
-    height: 80px;
-    fill: var(--color-third);
-    transition-property: fill;
-     transition-duration: 250ms;
-    transition-timing-function: var(--cubic);
-  }
-  
-  .clients__link {
-    display: flex;
-     align-items: center;
-    width: 170px;
-    height: 92px;
-    border: 1px solid var(--color-third);
-    border-radius: 4px;
     
-    transition-property: border-color;
-    transition-duration: 250ms;
-     transition-timing-function: var(--cubic);
+    max-height: 80px;
+    fill: var(--color-third);
+    @include transit(fill);
   }
   
-
-  .clients__link {
-    &:hover,
-    &:focus {
-      border-color: var(--button);
-    }
-    &:hover {
-    .clients__icon {
-      fill: var(--button)
-    }
-    } 
-    &:focus  {
-      .clients__icon {
-        fill: var(--button)
-      }
-    }
-  }
+  

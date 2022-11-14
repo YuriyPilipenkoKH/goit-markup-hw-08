@@ -10,12 +10,57 @@
     margin-right: auto;
     background-size: cover;
     background-color: var(--image-overlay-bgc);
-    background-image: linear-gradient(to right, var(--image-overlay), var(--image-overlay)), url("../images/header-image.jpg");
+  
+
+    @media screen and (max-width: 479px) {
+      background-image: linear-gradient(to right, var(--image-overlay), var(--image-overlay)),
+        url("../../images/header-img__mobile.jpg");
+
+        @media screen and (min-device-pixel-ratio: 2),
+        screen and (min-resolution: 192dpi),
+        screen and (min-resolution: 2dppx) {
+         .overlay {
+           background-image: linear-gradient(to right,  var(--image-overlay), var(--image-overlay)),
+           url("../../images/header-img__mobile@2x.jpg");
+         }
+ }
+      
+    }
+    @media screen and (min-width: 480px) and (max-width: 767px) {
+      background-image: linear-gradient(to right, var(--image-overlay), var(--image-overlay)),
+      url("../../images/header-img__tab.jpg");
+
+      @media screen and (min-device-pixel-ratio: 2),
+      screen and (min-resolution: 192dpi),
+      screen and (min-resolution: 2dppx) {
+       .overlay {
+         background-image: linear-gradient(to right,  var(--image-overlay), var(--image-overlay)),
+         url("../../images/header-img__tab@2x.jpg");
+       }
+}
+    
+    }
+    @media screen and (min-width: 768px) {
+      background-image: linear-gradient(to right, var(--image-overlay), var(--image-overlay)),
+      url("../../images/header-img__desktop.jpg");
+
+      @media screen and (min-device-pixel-ratio: 2),
+      screen and (min-resolution: 192dpi),
+      screen and (min-resolution: 2dppx) {
+       .overlay {
+         background-image: linear-gradient(to right,  var(--image-overlay), var(--image-overlay)),
+         url("../../images/header-img__desktop@2x.jpg");
+       }
+}
+    
+    }
+
   }
+
   
   .hero__title {
     display: block;
-    width: 700px;
+   
     margin: 0 auto 30px;
     font-weight: 900;
     font-size: 44px;
@@ -24,6 +69,18 @@
     text-transform: uppercase;
     text-align: center;
     color: var(--main-background);
+
+    @media screen and (max-width: 1199px) {
+      font-size: 26px;
+      line-height: calc(42 / 26);
+      width: 360px;
+
+    }
+    @media screen and (min-width: 1200px) {
+      font-size: 44px;
+      line-height: calc(60 / 44);
+      width: 700px;
+    }
   }
   
   .hero__button {
@@ -44,12 +101,9 @@
     border: 1px solid var(--button);
     cursor: pointer;
   
-    transition-property: background-color;
-    transition-duration: 250ms;
-    transition-timing-function: var(--cubic);
+    @include transit(background-color);
   }
   
-
   .hero__button {
     &:hover,
     &:focus {

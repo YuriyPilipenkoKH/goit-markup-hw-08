@@ -1,9 +1,15 @@
 /*footer-join*/
   
   .footer-join {
-    width: 206px;
+    // width: 206px;
+
+    @media screen and (max-width: 768px) {
+      @include flexible;
+      flex-direction: column;
+      padding-bottom: 60px;
   }
-  
+}
+
   .footer-join__list {
     
     display: flex;
@@ -47,4 +53,8 @@
     letter-spacing: 0.03em;
     text-transform: uppercase;
     color: var(--main-background);
+
+    @media screen and (max-width: 1199px) {
+      text-align: center;
+  }
   }
