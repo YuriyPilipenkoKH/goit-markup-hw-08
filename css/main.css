@@ -87,6 +87,9 @@ img {
 
 /*header-logo*/
 .header-nav__logo {
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
   font-family: "Raleway", sans-serif;
   font-weight: 700;
   font-size: 26px;
@@ -94,7 +97,6 @@ img {
   letter-spacing: 0.03em;
   color: var(--button);
   text-decoration: none;
-  margin-right: 93px;
   padding: 25px 0 24px;
 }
 
@@ -185,23 +187,7 @@ img {
   text-decoration: none;
 }
 
-@media screen and (min-width: 768px) and (max-width: 1199px) {
-  .menu-container {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
-  }
-  .menu__list {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    gap: 50px;
-  }
-}
-@media screen and (min-width: 1200px) {
+@media screen and (min-width: 768px) {
   .menu-container {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -212,11 +198,14 @@ img {
     -webkit-box-pack: justify;
         -ms-flex-pack: justify;
             justify-content: space-between;
+    outline: 1px solid yellow;
+    width: 100%;
   }
   .menu__list {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
+    display: -webkit-inline-box;
+    display: -ms-inline-flexbox;
+    display: inline-flex;
+    gap: 50px;
   }
 }
 /*header*/
@@ -241,6 +230,23 @@ img {
             justify-content: space-between;
   }
 }
+@media screen and (min-width: 767px) and (max-width: 1199px) {
+  .header-nav {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    gap: 88px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .header-nav {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    gap: 93px;
+  }
+}
+
 .menu__link {
   letter-spacing: 0.02em;
   color: var(--main-color);
@@ -281,11 +287,6 @@ img {
   .menu__list .current {
     position: relative;
     color: var(--button);
-  }
-  .menu__list {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
   }
   .menu__list .current::after {
     position: absolute;
@@ -381,6 +382,10 @@ img {
           transition-timing-function: var(--cubic);
 }
 
+.contacts__item {
+  position: relative;
+}
+
 @media screen and (max-width: 767px) {
   .contacts__icon {
     display: none;
@@ -394,9 +399,9 @@ img {
     color: var(--contact);
   }
   .contacts {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
+    display: -webkit-inline-box;
+    display: -ms-inline-flexbox;
+    display: inline-flex;
     -webkit-box-orient: vertical;
     -webkit-box-direction: reverse;
         -ms-flex-direction: column-reverse;
@@ -410,6 +415,7 @@ img {
     font-size: 12px;
     line-height: 14px;
     color: var(--contact);
+    padding-left: 25px;
   }
   .contacts {
     display: -webkit-box;
@@ -419,13 +425,18 @@ img {
     -webkit-box-direction: reverse;
         -ms-flex-direction: row-reverse;
             flex-direction: row-reverse;
-    justify-self: flex-start;
+    gap: 40px;
   }
-  .contacts-position {
-    margin-right: auto;
-    justify-self: flex-start;
+  .contacts__icon {
+    position: absolute;
+    top: 4px;
+    left: 0;
   }
 }
+.contacts-position {
+  position: relative;
+}
+
 /*hero*/
 .main {
   padding: 200px 0;

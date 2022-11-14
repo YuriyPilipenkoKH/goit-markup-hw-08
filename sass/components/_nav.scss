@@ -18,16 +18,15 @@
       align-items: center;
       justify-content: space-between;
     }
-    @media screen and (min-width: 768px) and (max-width: 1199px) {
-      // display: flex;
+    @media screen and (min-width: 767px) and (max-width: 1199px) {
+      display: flex;
       // justify-content: space-between;
-      // gap: 88px;
-
+      gap: 88px;
     
     }
     @media screen and (min-width: 1200px) {
-      // display: flex;
-      // gap: 93px;
+    display: flex;
+      gap: 93px;
      
     }
   }
@@ -76,7 +75,7 @@
   }
   
  .menu__list {
-  display: flex;
+  // display: flex;
   
   
    .current {

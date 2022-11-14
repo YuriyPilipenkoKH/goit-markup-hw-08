@@ -78,29 +78,20 @@
     text-decoration: none;
 
 }
-@media screen and (min-width: 768px) and (max-width: 1199px) {
+@media screen and (min-width: 768px)  {
     .menu-container {
-        display: flex;
+       display: flex;
         align-items: center;
+        justify-content: space-between;
+        outline: 1px solid yellow;
+        width: 100%;
+       
         
     }
     .menu__list {
        
-        display: flex;
+        display: inline-flex;
         gap: 50px;
         
-    }
-   }
-   @media screen and (min-width: 1200px) {
-    .menu-container {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    
-    }
-    .menu__list {
-       
-        display: flex;
-        // gap: 50px;
     }
    }
