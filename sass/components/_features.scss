@@ -37,7 +37,6 @@
 
     @media screen and (min-width: 480px) {
       flex-basis: calc((100% - 1 * 30px) / 2);
-    
 
     }
     @media screen and (min-width: 1200px) {
@@ -57,7 +56,6 @@
     @media screen and (min-width: 480px) {
       margin-left: auto;
       margin-right: auto;
-      max-width: 350px;
     }
   }
   
@@ -86,7 +84,4 @@
     letter-spacing: 0.03em;
     color: var(--contact);
   }
-  .feature-box {
-    max-width: 350px;
-    margin: 0 auto;
-  }
+  

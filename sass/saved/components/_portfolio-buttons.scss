@@ -9,14 +9,6 @@
     margin-bottom: 50px;
     list-style-type: none;
     text-decoration: none;
-
-    @media screen and (max-width: 767px) {
-      flex-wrap: wrap;
-      gap: 8px;
-      justify-content: start;
-     max-width: 400px;
-
-    }
   }
   
   .button-list__menu-button {

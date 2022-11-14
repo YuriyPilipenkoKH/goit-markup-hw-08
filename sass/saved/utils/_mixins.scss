@@ -1,0 +1,10 @@
+@mixin flexible($value: center) {
+    display: flex;
+    align-items: center;
+    justify-content: $value;
+}
+@mixin transit($value) {
+    transition-property: $value;
+    transition-duration: 250ms;
+    transition-timing-function: $cubic;
+}

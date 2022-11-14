@@ -1,0 +1,41 @@
+
+/*features*/
+
+  
+  .features {
+    padding: 94px 0;
+  }
+  
+  .feature__list {
+    display: flex;
+    gap: 30px;
+    flex-basis: calc((100% - 90px) / 4);
+  }
+  
+  .feature-content {
+    @include flexible;
+    width: 270px;
+    height: 120px;
+
+    background: var(--team);
+    border-radius: 4px;
+  }
+  
+  .feature-content__title {
+    margin-top: 30px;
+    margin-bottom: 10px;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 1.14;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+    color: var(--main-color);
+  }
+  
+  .feature-content__text {
+    font-size: 14px;
+    line-height: 1.71;
+    letter-spacing: 0.03em;
+    color: var(--contact);
+  }
+  

@@ -50,7 +50,7 @@
 
   }
 .contacts__item--tel {
-  margin-top: 300px;
+  margin-top: auto;
   margin-bottom: 32px;
   @media screen and (min-width: 768px) {
     margin: 0;
@@ -95,6 +95,7 @@
       font-size: 12px;
       line-height: 14px;
       color: var(--contact);
+      padding-left: 25px;
            
     }
     .contacts {
@@ -106,7 +107,8 @@
     .contacts__icon {
       position: absolute;
       top: 4px;
-      left: 0;
+      left: -2px;
+      scale: 0.9;
      }
      
 

@@ -1,0 +1,55 @@
+
+  /*header*/
+  .header {
+    outline: 1px solid var(--line);
+  }
+  
+  .menu__list, .contacts {
+    @include flexible;
+    gap: 50px;
+  }
+  
+  .header-nav {
+    @include flexible;
+
+  }
+  
+  .current {
+    color: var(--button);
+  }
+  
+  /* Thin blue line */
+  .menu__list .current {
+    position: relative;
+    color: var(--button);
+  }
+  
+  .menu__list {
+
+    .current {
+      &::after {
+        position: absolute;
+        bottom: -1px;
+        display: block;
+        content: "";
+        height: 4px;
+        width: 100%;
+        background-color: var(--button);
+        border-radius: 4px;
+    }
+  }
+  }
+  .menu__link {
+    &:hover,
+    &:focus {
+      color: var(--button);
+    }
+    color: var(--main-color);
+
+    // transition-property: color;
+    // transition-duration: 250ms;
+    // transition-timing-function: var(--cubic);
+    @include transit(color)
+
+  }
+
