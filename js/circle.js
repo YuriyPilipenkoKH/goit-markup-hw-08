@@ -1,6 +1,6 @@
 function buttonAnimation () {
-    const button = document.querySelector('.btn');
-    const cont = document.querySelector('.click');
+    const button = document.querySelector('.btn')
+    const cont = document.querySelector('.click')
 
     function deleteCircleIcon (circle) {
         circle.remove()
@@ -8,11 +8,11 @@ function buttonAnimation () {
     }
 
     function createCircleIcon (posX, posY) {
-        const circle = document.createElement('div');
+        const circle = document.createElement('div')
 
-        circle.classList.add('circle');
-        circle.style.left = `${posX}px`;
-        circle.style.top = `${posY}px`; 
+        circle.classList.add('circle')
+        circle.style.left = `${posX}px`
+        circle.style.top = `${posY}px`
 
         cont.appendChild(circle);
 
