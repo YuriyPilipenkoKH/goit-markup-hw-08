@@ -214,6 +214,7 @@
     border-radius: 2px;
     -webkit-transition: border 250ms var(--cubic);
     transition: border 250ms var(--cubic);
+    
   }
 
   .form-check {
@@ -283,6 +284,8 @@
     letter-spacing: 0.03em;
     color: var(--contact);
     // padding-left: 35px;
+    margin-bottom: 5px;
+    
   }
   
   .form-check__contract-terms {
@@ -290,6 +293,7 @@
     letter-spacing: 0.03em;
     text-decoration: underline;
     color: var(--button);
+    
   }
 
   @media screen and (max-width: 449px)  {
