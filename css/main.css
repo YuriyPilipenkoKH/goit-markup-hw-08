@@ -1713,11 +1713,12 @@ img {
   display: flex;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
   gap: 8px;
   margin-bottom: 20px;
+  padding-left: 35px;
 }
 
 .form-check__input:checked ~ .form-check__icon {
@@ -1751,6 +1752,8 @@ img {
   border-color: transparent;
   border: 1px solid var(--button);
   cursor: pointer;
+  -webkit-box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
+          box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
   -webkit-transition-property: background-color, -webkit-box-shadow;
   transition-property: background-color, -webkit-box-shadow;
   transition-property: background-color, box-shadow;
@@ -1772,7 +1775,6 @@ img {
   line-height: 1.1666666667;
   letter-spacing: 0.03em;
   color: var(--contact);
-  padding-left: 35px;
 }
 
 .form-check__contract-terms {
@@ -1781,7 +1783,7 @@ img {
   color: var(--button);
 }
 
-@media screen and (max-width: 399px) {
+@media screen and (max-width: 449px) {
   .form-check, .form-check__contract-terms, .form-check__text {
     font-size: 10px;
     line-height: 1.1;
@@ -1790,8 +1792,8 @@ img {
     left: 9.5px;
   }
 }
-@media screen and (min-width: 400px) and (max-width: 1199px) {
-  .form-check, .form-check__contract-terms {
+@media screen and (min-width: 450px) and (max-width: 1199px) {
+  .form-check, .form-check__contract-terms .form-check__text {
     font-size: 12px;
     line-height: 1.1666666667;
   }
@@ -1800,12 +1802,12 @@ img {
   }
 }
 @media screen and (min-width: 1200px) {
-  .form-check, .form-check__contract-terms {
+  .form-check, .form-check__contract-terms .form-check__text {
     font-size: 14px;
     line-height: 1.1666666667;
   }
   .form-check__box {
-    left: 22px;
+    left: 9.5px;
   }
 }
 /*portfolio*/

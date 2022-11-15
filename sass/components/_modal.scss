@@ -218,10 +218,11 @@
   .form-check__content {
     display: flex;
     flex-wrap: wrap;
-    justify-content: center;
+    justify-content: flex-start;
     gap: 8px;
     // outline: 1px solid crimson;
     margin-bottom: 20px;
+    padding-left: 35px;
   }
   
   
@@ -246,6 +247,8 @@
     // margin: 0 auto 30px;
     // letter-spacing: 0.03em;
     // color: var(--contact);
+    
+   
   }
   
   .modal-form__button {
@@ -266,6 +269,7 @@
     border-color: transparent;
     border: 1px solid var(--button);
     cursor: pointer;
+    box-shadow: $box-shadow-first;
 
     transition-property: background-color, box-shadow;
      transition-duration: 250ms;
@@ -284,7 +288,7 @@
     line-height: calc(14 / 12);
     letter-spacing: 0.03em;
     color: var(--contact);
-    padding-left: 35px;
+    // padding-left: 35px;
   }
   
   .form-check__contract-terms {
@@ -294,7 +298,7 @@
     color: var(--button);
   }
 
-  @media screen and (max-width: 399px)  {
+  @media screen and (max-width: 449px)  {
     .form-check, .form-check__contract-terms, .form-check__text {
       font-size: 10px;
       line-height: calc(11 / 10);
@@ -305,8 +309,8 @@
 
   }
 
-  @media screen and (min-width: 400px) and (max-width: 1199px) {
-    .form-check, .form-check__contract-terms{
+  @media screen and (min-width: 450px) and (max-width: 1199px) {
+    .form-check, .form-check__contract-terms .form-check__text {
       font-size: 12px;
       line-height: calc(14 / 12);
     }
@@ -316,12 +320,12 @@
 
   }
   @media screen and (min-width: 1200px) {
-    .form-check, .form-check__contract-terms {
+    .form-check, .form-check__contract-terms .form-check__text {
       font-size: 14px;
       line-height: calc(14 / 12);
     }
     .form-check__box {
-      left: 22px;
+      left: 9.5px;
     }
 
   }
