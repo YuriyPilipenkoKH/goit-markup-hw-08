@@ -19,7 +19,7 @@
     opacity: 1;
     transition: opacity 1600ms var(--cubic);
 
-     overflow-y: scroll;
+    //  overflow-y: scroll;
   }
   
   .is-hidden {
@@ -43,6 +43,11 @@
 
     transform: translate(-50%, -50%) scale(1);
     transition: transform 1600ms var(--cubic);
+
+    @media screen and (max-width: 450px) {
+      height: 609px;
+      width: 90vw;
+    }
 
     @media screen and (max-width: 1199px) {
       height: 609px;
