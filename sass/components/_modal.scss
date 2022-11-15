@@ -19,7 +19,7 @@
     opacity: 1;
     transition: opacity 1600ms var(--cubic);
 
-    //  overflow-y: scroll;
+    overflow-y: scroll;
   }
   
   .is-hidden {
@@ -219,9 +219,9 @@
     display: flex;
     flex-wrap: wrap;
     justify-content: flex-start;
-    gap: 8px;
+    gap: 5px;
     // outline: 1px solid crimson;
-    margin-bottom: 20px;
+   margin-bottom: 30px;
     padding-left: 35px;
   }
   
@@ -254,6 +254,7 @@
   .modal-form__button {
     display: block;
     margin: 0 auto;
+ 
     padding: 10px 52px;
     font-family: inherit;
     font-style: normal;
