@@ -47,7 +47,7 @@ body {
   background-color: var(--main-background);
 }
 
-.body.modal-open {
+body.modal-open {
   overflow: hidden;
 }
 
@@ -1708,6 +1708,10 @@ img {
   transition: border 250ms var(--cubic);
 }
 
+.form-check {
+  position: relative;
+}
+
 .form-check__content {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -1718,7 +1722,6 @@ img {
       -ms-flex-pack: start;
           justify-content: flex-start;
   gap: 5px;
-  margin-bottom: 30px;
   padding-left: 35px;
 }
 
@@ -1729,13 +1732,9 @@ img {
   border: 2px solid var(--button);
 }
 
-.form-check {
-  position: relative;
-}
-
 .modal-form__button {
   display: block;
-  margin: 0 auto;
+  margin: 30px auto 0;
   padding: 10px 52px;
   font-family: inherit;
   font-style: normal;
