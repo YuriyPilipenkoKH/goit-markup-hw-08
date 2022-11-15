@@ -40,16 +40,18 @@
     position: absolute;
     top: 50%;
     left: 50%;
+    z-index: 20;
 
     transform: translate(-50%, -50%) scale(1);
     transition: transform 1600ms var(--cubic);
 
     @media screen and (max-width: 450px) {
-      height: 609px;
-      width: 90vw;
+      min-height: 609px;
+      width: 98vw;
+      padding: 40px 30px;
     }
 
-    @media screen and (max-width: 1199px) {
+    @media screen and (min-width: 451px) and (max-width: 1199px) {
       height: 609px;
       width: 450px;
     }
@@ -154,7 +156,7 @@
   }
 
   .form-comments {
-    margin-bottom: 20px;
+    // margin-bottom: 20px;
     display: block;
   }
   
@@ -185,10 +187,14 @@
   }
   
   .form-check__input {
-    position: relative;
+     position: relative;
   }
   
   .form-check__icon {
+     position: absolute;
+     top: 14px;
+     left: 9.5px;
+
     padding: 0;
     fill: var(--main-background);
 
@@ -197,8 +203,10 @@
     transition-timing-function: var(--cubic);
   }
   
-  .form-check__text {
+  .form-check__box {
     position: absolute;
+    top: 14px;
+    left: 0;
     
     width: 16px;
     height: 15px;
@@ -207,13 +215,22 @@
     -webkit-transition: border 250ms var(--cubic);
     transition: border 250ms var(--cubic);
   }
+  .form-check__content {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 8px;
+    // outline: 1px solid crimson;
+    margin-bottom: 20px;
+  }
+  
   
   .form-check__input {
     &:checked {
       ~.form-check__icon {
         fill: var(--button);
       }
-      ~.form-check__text {
+      ~.form-check__box {
         border: 2px solid var(--button);
       }
     }
@@ -221,13 +238,14 @@
 
   .form-check {
     position: relative;
-    display: flex;
-    justify-content: center;
-    gap: 8px;
-     align-items: center;
-    margin: 0 auto 30px;
-    letter-spacing: 0.03em;
-    color: var(--contact);
+    // display: flex;
+    // justify-content: flex-start;
+    //  flex-wrap: wrap;
+    // gap: 8px;
+    //  align-items: center;
+    // margin: 0 auto 30px;
+    // letter-spacing: 0.03em;
+    // color: var(--contact);
   }
   
   .modal-form__button {
@@ -261,6 +279,13 @@
       box-shadow: var(--box-shadow-fifth);
     }
   }
+  .form-check__text {
+    font-size: 12px;
+    line-height: calc(14 / 12);
+    letter-spacing: 0.03em;
+    color: var(--contact);
+    padding-left: 35px;
+  }
   
   .form-check__contract-terms {
     
@@ -269,12 +294,23 @@
     color: var(--button);
   }
 
-  @media screen and (max-width: 1199px) {
+  @media screen and (max-width: 399px)  {
+    .form-check, .form-check__contract-terms, .form-check__text {
+      font-size: 10px;
+      line-height: calc(11 / 10);
+    }
+    .form-check__box {
+      left: 9.5px;
+    }
+
+  }
+
+  @media screen and (min-width: 400px) and (max-width: 1199px) {
     .form-check, .form-check__contract-terms{
       font-size: 12px;
       line-height: calc(14 / 12);
     }
-    .form-check__text {
+    .form-check__box {
       left: 9.5px;
     }
 
@@ -284,8 +320,8 @@
       font-size: 14px;
       line-height: calc(14 / 12);
     }
-    .form-check__text {
-      left: 21.5px;
+    .form-check__box {
+      left: 22px;
     }
 
   }

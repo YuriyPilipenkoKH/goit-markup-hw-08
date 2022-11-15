@@ -201,6 +201,11 @@ img {
   }
 }
 
+.icon-menu,
+.icon-cross {
+  z-index: 1;
+}
+
 .menu-button .icon-cross {
   display: none;
 }
@@ -239,8 +244,10 @@ img {
             justify-content: space-between;
     -webkit-transform: translateX(0%);
             transform: translateX(0%);
-    -webkit-transition: opacity 650ms cubic-bezier(0.4, 0, 0.2, 1), visibility 250ms cubic-bezier(0.4, 0, 0.2, 1);
-    transition: opacity 650ms cubic-bezier(0.4, 0, 0.2, 1), visibility 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    -webkit-transition: opacity 650ms var(--cubic), visibility 250ms var(--cubic), -webkit-transform 1000ms var(--cubic);
+    transition: opacity 650ms var(--cubic), visibility 250ms var(--cubic), -webkit-transform 1000ms var(--cubic);
+    transition: opacity 650ms var(--cubic), visibility 250ms var(--cubic), transform 1000ms var(--cubic);
+    transition: opacity 650ms var(--cubic), visibility 250ms var(--cubic), transform 1000ms var(--cubic), -webkit-transform 1000ms var(--cubic);
   }
 }
 
@@ -1519,6 +1526,7 @@ img {
   position: absolute;
   top: 50%;
   left: 50%;
+  z-index: 20;
   -webkit-transform: translate(-50%, -50%) scale(1);
           transform: translate(-50%, -50%) scale(1);
   -webkit-transition: -webkit-transform 1600ms var(--cubic);
@@ -1528,11 +1536,12 @@ img {
 }
 @media screen and (max-width: 450px) {
   .modal {
-    height: 609px;
-    width: 90vw;
+    min-height: 609px;
+    width: 98vw;
+    padding: 40px 30px;
   }
 }
-@media screen and (max-width: 1199px) {
+@media screen and (min-width: 451px) and (max-width: 1199px) {
   .modal {
     height: 609px;
     width: 450px;
@@ -1639,7 +1648,6 @@ img {
 }
 
 .form-comments {
-  margin-bottom: 20px;
   display: block;
 }
 
@@ -1674,6 +1682,9 @@ img {
 }
 
 .form-check__icon {
+  position: absolute;
+  top: 14px;
+  left: 9.5px;
   padding: 0;
   fill: var(--main-background);
   -webkit-transition-property: fill;
@@ -1684,8 +1695,10 @@ img {
           transition-timing-function: var(--cubic);
 }
 
-.form-check__text {
+.form-check__box {
   position: absolute;
+  top: 14px;
+  left: 0;
   width: 16px;
   height: 15px;
   border: 2px solid var(--black);
@@ -1694,28 +1707,28 @@ img {
   transition: border 250ms var(--cubic);
 }
 
+.form-check__content {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  gap: 8px;
+  margin-bottom: 20px;
+}
+
 .form-check__input:checked ~ .form-check__icon {
   fill: var(--button);
 }
-.form-check__input:checked ~ .form-check__text {
+.form-check__input:checked ~ .form-check__box {
   border: 2px solid var(--button);
 }
 
 .form-check {
   position: relative;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  gap: 8px;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  margin: 0 auto 30px;
-  letter-spacing: 0.03em;
-  color: var(--contact);
 }
 
 .modal-form__button {
@@ -1754,18 +1767,35 @@ img {
           box-shadow: var(--box-shadow-fifth);
 }
 
+.form-check__text {
+  font-size: 12px;
+  line-height: 1.1666666667;
+  letter-spacing: 0.03em;
+  color: var(--contact);
+  padding-left: 35px;
+}
+
 .form-check__contract-terms {
   letter-spacing: 0.03em;
   text-decoration: underline;
   color: var(--button);
 }
 
-@media screen and (max-width: 1199px) {
+@media screen and (max-width: 399px) {
+  .form-check, .form-check__contract-terms, .form-check__text {
+    font-size: 10px;
+    line-height: 1.1;
+  }
+  .form-check__box {
+    left: 9.5px;
+  }
+}
+@media screen and (min-width: 400px) and (max-width: 1199px) {
   .form-check, .form-check__contract-terms {
     font-size: 12px;
     line-height: 1.1666666667;
   }
-  .form-check__text {
+  .form-check__box {
     left: 9.5px;
   }
 }
@@ -1774,8 +1804,8 @@ img {
     font-size: 14px;
     line-height: 1.1666666667;
   }
-  .form-check__text {
-    left: 21.5px;
+  .form-check__box {
+    left: 22px;
   }
 }
 /*portfolio*/
