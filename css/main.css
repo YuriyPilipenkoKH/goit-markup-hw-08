@@ -322,7 +322,7 @@ img {
             justify-content: space-between;
   }
 }
-@media screen and (min-width: 767px) and (max-width: 1199px) {
+@media screen and (min-width: 768px) and (max-width: 1199px) {
   .header-nav {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -368,7 +368,7 @@ img {
     line-height: 1.175;
   }
 }
-@media screen and (min-width: 769px) {
+@media screen and (min-width: 768px) {
   .menu__link {
     padding: 32px 0;
     font-weight: 500;
@@ -670,7 +670,15 @@ img {
   }
 }
 
-@media screen and (max-width: 768px) {
+.feature__list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  gap: 30px;
+}
+@media screen and (max-width: 767px) {
   .feature__list {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -684,26 +692,8 @@ img {
     gap: 30px;
   }
 }
-@media screen and (max-width: 1199px) {
-  .feature__list {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -ms-flex-wrap: wrap;
-        flex-wrap: wrap;
-    gap: 30px;
-  }
-}
-@media screen and (min-width: 1200px) {
-  .feature__list {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    gap: 30px;
-  }
-}
 
-@media screen and (min-width: 480px) {
+@media screen and (min-width: 768px) {
   .feature__item {
     -ms-flex-preferred-size: calc((100% - 30px) / 2);
         flex-basis: calc((100% - 30px) / 2);
@@ -746,7 +736,7 @@ img {
   text-transform: uppercase;
   color: var(--main-color);
 }
-@media screen and (min-width: 480px) {
+@media screen and (max-width: 767px) {
   .feature-content__title {
     text-align: center;
   }
@@ -855,7 +845,7 @@ img {
   }
 }
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 767px) {
   .team__list {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -894,7 +884,7 @@ img {
   -webkit-box-shadow: var(--box-shadow-first);
           box-shadow: var(--box-shadow-first);
 }
-@media screen and (min-width: 480px) {
+@media screen and (min-width: 768px) {
   .team__list-item {
     -ms-flex-preferred-size: calc((100% - 30px) / 2);
         flex-basis: calc((100% - 30px) / 2);
