@@ -1801,7 +1801,11 @@ img {
 }
 
 @media screen and (max-width: 449px) {
-  .form-check, .form-check__contract-terms, .form-check__text {
+  .form-check__contract-terms, .form-check__text {
+    font-size: 10px;
+    line-height: 1.1;
+  }
+  .form-check {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -1811,12 +1815,12 @@ img {
     -ms-flex-wrap: wrap;
         flex-wrap: wrap;
     gap: 8px;
-    font-size: 10px;
-    line-height: 1.1;
   }
   .form-check__box {
-    position: absolute;
     left: 37px;
+  }
+  .form-check__contract-terms {
+    justify-self: center;
   }
 }
 @media screen and (min-width: 450px) and (max-width: 767px) {
@@ -1825,7 +1829,6 @@ img {
     line-height: 1.1666666667;
   }
   .form-check__box {
-    position: absolute;
     left: 51px;
   }
 }
@@ -1835,7 +1838,6 @@ img {
     line-height: 1.1666666667;
   }
   .form-check__box {
-    position: absolute;
     left: 51px;
   }
 }
@@ -1851,7 +1853,6 @@ img {
     line-height: 1.1666666667;
   }
   .form-check__box {
-    position: absolute;
     left: 63px;
   }
 }
