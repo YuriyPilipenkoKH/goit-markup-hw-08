@@ -1111,7 +1111,7 @@ img {
 }
 
 .clients__icon {
-  max-height: 80px;
+  height: 92px;
   fill: var(--color-third);
   -webkit-transition-property: fill;
   transition-property: fill;
