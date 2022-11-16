@@ -1096,7 +1096,7 @@ img {
   .clients__item {
     -ms-flex-preferred-size: calc((100% - 150px) / 6);
         flex-basis: calc((100% - 150px) / 6);
-    min-width: 100px;
+    width: 170px;
   }
 }
 
