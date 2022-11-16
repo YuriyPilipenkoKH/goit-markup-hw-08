@@ -184,6 +184,7 @@
     letter-spacing: 0.01em;
     color: var(--black);
     border-radius: 4px;
+    margin-bottom: 20px;
   }
   
   .form-check__input {
@@ -191,9 +192,7 @@
   }
   
   .form-check__icon {
-     position: absolute;
-     top: 14px;
-     left: 9.5px;
+   
 
     padding: 0;
     fill: var(--main-background);
@@ -205,9 +204,7 @@
   
   .form-check__box {
     position: absolute;
-    top: 14px;
-    left: 0;
-    
+    left: 63px;
     width: 16px;
     height: 15px;
     border: 2px solid var(--black);
@@ -218,8 +215,10 @@
   }
 
   .form-check {
-    position: relative;
-    
+  display: flex;
+  gap: 4px;
+  justify-content: center;
+ 
   }
   
   .form-check__content {
@@ -279,8 +278,8 @@
     }
   }
   .form-check__text {
-    font-size: 12px;
-    line-height: calc(14 / 12);
+    font-size: 14px;
+    line-height: calc(16 / 14);
     letter-spacing: 0.03em;
     color: var(--contact);
     // padding-left: 35px;
@@ -298,32 +297,53 @@
 
   @media screen and (max-width: 449px)  {
     .form-check, .form-check__contract-terms, .form-check__text {
+      display: flex;
+      justify-content: start;
+      flex-wrap: wrap;
+      gap: 8px;
       font-size: 10px;
       line-height: calc(11 / 10);
     }
     .form-check__box {
-      left: 9.5px;
+      position: absolute;
+      left: 37px;
     }
 
-  }
 
-  @media screen and (min-width: 450px) and (max-width: 1199px) {
-    .form-check, .form-check__contract-terms .form-check__text {
+  }
+  @media screen and (min-width: 450px) and (max-width: 767px) {
+    .form-check, .form-check__contract-terms, .form-check__text {
       font-size: 12px;
       line-height: calc(14 / 12);
     }
     .form-check__box {
-      left: 9.5px;
+      position: absolute;
+      left: 51px;
+    }
+
+  }
+
+  @media screen and (min-width: 768px) and (max-width: 1199px) {
+    .form-check, .form-check__contract-terms, .form-check__text {
+      font-size: 12px;
+      line-height: calc(14 / 12);
+    }
+    .form-check__box {
+      position: absolute;
+      left: 51px;
     }
 
   }
   @media screen and (min-width: 1200px) {
-    .form-check, .form-check__contract-terms .form-check__text {
+    .form-check, .form-check__contract-terms, .form-check__text {
+      display: flex;
+      justify-content: center;
       font-size: 14px;
       line-height: calc(14 / 12);
     }
     .form-check__box {
-      left: 9.5px;
+      position: absolute;
+      left: 63px;
     }
 
   }
