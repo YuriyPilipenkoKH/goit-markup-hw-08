@@ -1,7 +1,7 @@
 
 /*features*/
 
-  
+ 
   .features {
     @media screen and (max-width: 1199px) {
       padding: 60px 0;
@@ -44,12 +44,14 @@
       
     }
   }
-  
+ 
   .feature-content {
-    @include flexible;
-    // width: 270px;
+    display: flex;
+    justify-content: center;
+    width: 100%;
     height: 120px;
-
+    padding: 25px 0;
+    margin-bottom: 30px;
     background: var(--team);
     border-radius: 4px;
 
@@ -60,7 +62,7 @@
   }
   
   .feature-content__title {
-    margin-top: 30px;
+ 
     margin-bottom: 10px;
     font-weight: 700;
     font-size: 14px;
