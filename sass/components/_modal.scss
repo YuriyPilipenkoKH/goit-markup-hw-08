@@ -292,6 +292,10 @@
     letter-spacing: 0.03em;
     text-decoration: underline;
     color: var(--button);
+
+    @media screen and (max-width: 377px) {
+      padding-left: 30px;
+    }
     
   }
 

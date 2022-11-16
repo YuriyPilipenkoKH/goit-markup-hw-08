@@ -1789,6 +1789,11 @@ img {
   text-decoration: underline;
   color: var(--button);
 }
+@media screen and (max-width: 377px) {
+  .form-check__contract-terms {
+    padding-left: 30px;
+  }
+}
 
 @media screen and (max-width: 449px) {
   .form-check__contract-terms, .form-check__text {
