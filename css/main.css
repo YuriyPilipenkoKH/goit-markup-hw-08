@@ -55,10 +55,6 @@ body.modal-open .menu-button__icon {
   z-index: -2;
 }
 
-body {
-  overflow-x: hidden;
-}
-
 h1, h2, h3, h4, h5, h6, p, ul {
   margin-top: 0;
   margin-bottom: 0;
@@ -177,7 +173,7 @@ img {
   letter-spacing: 0.03em;
   color: var(--button);
   text-decoration: none;
-  padding: 25px 0 24px;
+  padding: 0;
 }
 
 .header-nav__logo-link--black {
@@ -311,7 +307,6 @@ img {
 /*header*/
 .header {
   outline: 1px solid var(--line);
-  position: relative;
 }
 
 .header-nav {
@@ -470,8 +465,6 @@ img {
 }
 
 .contacts__icon {
-  position: absolute;
-  display: block;
   height: auto;
   fill: var(--contact);
   -webkit-transition-property: fill;
@@ -497,7 +490,6 @@ img {
     font-size: 12px;
     line-height: 14px;
     color: var(--contact);
-    padding-left: 25px;
   }
   .contacts {
     display: -webkit-inline-box;
@@ -509,12 +501,6 @@ img {
             flex-direction: column-reverse;
     gap: 10px;
   }
-  .contacts__icon {
-    position: absolute;
-    top: 4px;
-    left: -2px;
-    scale: 0.9;
-  }
 }
 @media screen and (min-width: 1200px) {
   .contacts__link {
@@ -522,7 +508,6 @@ img {
     font-size: 12px;
     line-height: 14px;
     color: var(--contact);
-    padding-left: 25px;
   }
   .contacts {
     display: -webkit-box;
@@ -534,16 +519,7 @@ img {
             flex-direction: row-reverse;
     gap: 40px;
   }
-  .contacts__icon {
-    position: absolute;
-    top: 4px;
-    left: 0;
-  }
 }
-.contacts-position {
-  position: relative;
-}
-
 /*hero*/
 .main {
   padding: 200px 0;
@@ -556,6 +532,7 @@ img {
   margin-right: auto;
   background-size: cover;
   background-position: center;
+  background-repeat: no-repeat;
   background-color: var(--image-overlay-bgc);
 }
 @media screen and (max-width: 479px) {

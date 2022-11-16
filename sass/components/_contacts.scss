@@ -68,8 +68,7 @@
   }
 
   .contacts__icon {
-    position: absolute;
-    display: block;
+    
     height: auto;
     fill: var(--contact);
 
@@ -95,7 +94,7 @@
       font-size: 12px;
       line-height: 14px;
       color: var(--contact);
-      padding-left: 25px;
+      
            
     }
     .contacts {
@@ -105,10 +104,7 @@
      
     }
     .contacts__icon {
-      position: absolute;
-      top: 4px;
-      left: -2px;
-      scale: 0.9;
+    
      }
      
 
@@ -121,7 +117,7 @@
       font-size: 12px;
       line-height: 14px;
       color: var(--contact);
-      padding-left: 25px;
+      
 
     }
     .contacts {
@@ -130,15 +126,7 @@
       flex-direction: row-reverse;
       gap: 40px;
       
-   }
-   .contacts__icon {
-    position: absolute;
-    top: 4px;
-    left: 0;
-   }
-   
+    }
   }
-  .contacts-position {
-    position: relative;
-   }
+ 
  
