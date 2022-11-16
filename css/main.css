@@ -173,7 +173,7 @@ img {
   letter-spacing: 0.03em;
   color: var(--button);
   text-decoration: none;
-  padding: 0;
+  padding: 24px 0 25px;
 }
 
 .header-nav__logo-link--black {
@@ -309,9 +309,6 @@ img {
   outline: 1px solid var(--line);
 }
 
-.header-nav {
-  position: relative;
-}
 @media screen and (max-width: 767px) {
   .header-nav {
     display: -webkit-box;
@@ -475,17 +472,30 @@ img {
           transition-timing-function: var(--cubic);
 }
 
-.contacts__item {
-  position: relative;
-}
-
 @media screen and (max-width: 767px) {
   .contacts__icon {
     display: none;
   }
 }
 @media screen and (min-width: 768px) and (max-width: 1199px) {
+  .contacts__link--tel {
+    margin: 0;
+    width: 123px;
+  }
+  .contacts__link--mail {
+    margin: 0;
+    width: 138px;
+  }
   .contacts__link {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
     font-weight: 500;
     font-size: 12px;
     line-height: 14px;
@@ -501,13 +511,18 @@ img {
             flex-direction: column-reverse;
     gap: 10px;
   }
+  .contacts__icon {
+    scale: 0.9;
+  }
 }
 @media screen and (min-width: 1200px) {
-  .contacts__link {
-    font-weight: 500;
-    font-size: 12px;
-    line-height: 14px;
-    color: var(--contact);
+  .contacts__link--tel {
+    margin: 0;
+    width: 142px;
+  }
+  .contacts__link--mail {
+    margin: 0;
+    width: 161px;
   }
   .contacts {
     display: -webkit-box;
@@ -518,6 +533,21 @@ img {
         -ms-flex-direction: row-reverse;
             flex-direction: row-reverse;
     gap: 40px;
+  }
+  .contacts__link {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 1.1428571429;
+    color: var(--contact);
   }
 }
 /*hero*/
