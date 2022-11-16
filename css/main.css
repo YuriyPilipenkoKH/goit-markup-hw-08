@@ -1791,7 +1791,7 @@ img {
 }
 @media screen and (max-width: 377px) {
   .form-check__contract-terms {
-    padding-left: 30px;
+    margin-left: 30px;
   }
 }
 
