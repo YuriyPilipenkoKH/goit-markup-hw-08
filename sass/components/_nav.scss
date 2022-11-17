@@ -83,9 +83,10 @@
 
    .current {
     &::after {
-         position: absolute;
-         bottom: 0;
+        position: absolute;
+        bottom: -0.4px;
         display: block;
+        // inset: 1px;
         content: "";
         height: 4px;
         width: 100%;

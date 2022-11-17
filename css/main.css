@@ -383,7 +383,7 @@ img {
   }
   .current::after {
     position: absolute;
-    bottom: 0;
+    bottom: -0.4px;
     display: block;
     content: "";
     height: 4px;
