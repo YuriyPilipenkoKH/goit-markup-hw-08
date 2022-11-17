@@ -685,7 +685,6 @@ button:focus {
 .hero__title:hover {
   text-shadow: 10px 10px 30px #ff0, -10px -10px 30px rgba(255, 255, 0, 0.8);
   -webkit-text-stroke: 0.5px var(--main-background);
-  -webkit-text-fill-color: transparent;
 }
 
 .hero__button {
