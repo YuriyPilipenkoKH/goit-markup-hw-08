@@ -84,6 +84,13 @@
       width: 700px;
     }
   }
+  .hero__title:hover {
+    // color: yellow;
+    text-shadow: 10px 10px 30px #ff0, -10px -10px 30px #ff0c;
+    -webkit-text-stroke: 0.5px var(--main-background);
+    -webkit-text-fill-color: transparent;
+
+  }
   
   .hero__button {
     padding: 10px 32px;
