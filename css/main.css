@@ -68,6 +68,14 @@ img {
   display: block;
 }
 
+:focus {
+  outline: 1px solid var(--button);
+}
+
+button:focus {
+  outline: 1px solid var(--main-background);
+}
+
 .list {
   padding: 0;
   margin: 0;
