@@ -3,6 +3,7 @@
   .header {
     
     border-bottom: 1px solid var(--line);
+   
     
    
   }
@@ -32,6 +33,7 @@
   }
 
   .menu__link {
+   
    
     letter-spacing: 0.02em;
     color: var(--main-color);
@@ -74,14 +76,15 @@
     color: var(--button);
   }
   
- .menu__list {
-  // display: flex;
+// .menu__list {
+//    display: flex;
+//  } 
   
-  
+
    .current {
     &::after {
-       position: absolute;
-        bottom: -1px;
+         position: absolute;
+         bottom: 0;
         display: block;
         content: "";
         height: 4px;
@@ -90,10 +93,8 @@
          border-radius: 4px;
      }
   }
-  }
-
-  }
  
+  }
 
   .current {
     color: var(--button);

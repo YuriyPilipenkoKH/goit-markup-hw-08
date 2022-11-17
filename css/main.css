@@ -298,6 +298,7 @@ img {
     width: 100%;
   }
   .menu__list {
+    position: relative;
     display: -webkit-inline-box;
     display: -ms-inline-flexbox;
     display: inline-flex;
@@ -380,9 +381,9 @@ img {
     position: relative;
     color: var(--button);
   }
-  .menu__list .current::after {
+  .current::after {
     position: absolute;
-    bottom: -1px;
+    bottom: 0;
     display: block;
     content: "";
     height: 4px;
