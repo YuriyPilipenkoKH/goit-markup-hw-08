@@ -10,9 +10,16 @@
     text-decoration: none;
     // margin-right: 93px;
     padding:  24px 0 25px;
+
+    animation-duration: 250ms;
+  animation-timing-function: var(--cubic);
   }
   
   .header-nav__logo-link--black {
     color: var(--black);
     
+  }
+
+  .header-nav__logo:hover, .header-nav__logo:focus {
+    animation-name: rotate;
   }
