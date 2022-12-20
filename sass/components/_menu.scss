@@ -41,7 +41,8 @@
    
 
     @media screen and (max-width: 767px) {
-    display: none;
+    // display: none;
+    opacity: 0;
     position: absolute;
     top: 0;
     left: 0;
@@ -53,15 +54,18 @@
      height: 100vh;
      width: 100vw;
 
+     transform: translateX(100%);
+     transition: all 1s var(--cubic);
+
      &.is-open {
         display: flex;
+        opacity: 1;
         flex-direction: column;
         justify-content: space-between;
 
         transform: translateX(0%);
 
-        transition: opacity 650ms var(--cubic), visibility 250ms var(--cubic), transform 1000ms var(--cubic);
-    }    
+        transition: all 1s var(--cubic);    }    
 
     }
 }
